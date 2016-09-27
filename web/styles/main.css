@@ -1,10 +1,53 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+  Copyright © James Greenwell
+  Elon University
+  September 12th, 2016
 */
-/* 
-    Created on : Sep 19, 2016, 9:46:47 AM
-    Author     : jameszach
-*/
+body{
+  margin:2em;
+}
+
+h1{
+  margin-bottom: 0;
+  text-align: center;
+  
+}
+
+header p{
+  margin-top: 0;
+  text-align: center;
+}
+
+span{
+  float:right;
+}
+
+h2{
+  font-size: 1.1em;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+h3{
+  font-size: 1.1em;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+p{
+  margin-top: 0;
+}
+
+p.subDesc{
+  margin-bottom: 0;
+}
+
+ul{
+  margin-top: 0;
+}
+
+ul.multiList{
+  margin-bottom: 0;
+}
 
