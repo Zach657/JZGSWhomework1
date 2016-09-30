@@ -60,7 +60,7 @@ ul.multiList{
   color:red;
 }    
 
-@media screen and (max-device-width: 500px) {
+@media screen and (max-width: 500px) {
   #reactiveHead{
     visibility: hidden;
   }
