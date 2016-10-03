@@ -3,6 +3,10 @@
   Elon University
   September 12th, 2016
 */
+*{
+  font-family: sans-serif;
+}
+
 body{
   margin:2em;
 }
@@ -10,16 +14,20 @@ body{
 h1{
   margin-bottom: 0;
   text-align: center;
-  
+}
+
+p:nth-last-child(n+1){
+  margin-bottom: 0;
+}
+
+p.date{
+  padding-top: .15em;
+  float:right;
 }
 
 header p{
   margin-top: 0;
   text-align: center;
-}
-
-span{
-  float:right;
 }
 
 h2{
@@ -29,6 +37,7 @@ h2{
 }
 
 h3{
+  display: inline-block;
   font-size: 1.1em;
   font-weight: normal;
   margin-bottom: 0;
@@ -39,10 +48,6 @@ p{
   margin-top: 0;
 }
 
-p.subDesc{
-  margin-bottom: 0;
-}
-
 ul{
   margin-top: 0;
 }
@@ -51,3 +56,38 @@ ul.multiList{
   margin-bottom: 0;
 }
 
+#notTrue{
+  color:red;
+}    
+
+@media screen and (max-width: 500px) {
+  #reactiveHead{
+    visibility: hidden;
+  }
+  
+  #reactiveHead::after {
+    content:'';
+    display: block;
+    visibility: visible;
+  }
+  
+  div.contentBlock{
+    display:flex;
+    flex-direction: column;
+  }
+  
+  div.contentBlock p{
+    order:2;
+  }
+  
+  div.contentBlock p:nth-of-type(n+3), div.contentBlock ul{
+    order:4;
+  }
+  
+  div.contentBlock p.date{
+    padding-top: 0;
+    float: none;
+    order: 3;
+  }
+  
+}
