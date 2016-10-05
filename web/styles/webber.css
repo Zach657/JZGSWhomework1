@@ -21,8 +21,8 @@ p:nth-last-child(n+1){
 }
 
 p.date{
-  padding-top: .15em;
   float:right;
+  padding-top: .15em;
 }
 
 header p{
@@ -85,9 +85,9 @@ ul.multiList{
   }
   
   div.contentBlock p.date{
-    padding-top: 0;
     float: none;
     order: 3;
+    padding-top: 0;
   }
   
 }
